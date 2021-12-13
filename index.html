@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nattanun</title>
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!--==================== BOXICONS ====================-->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--==================== FONT AWESOME ====================-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <canvas id="canvas" style="position: absolute"></canvas>
+
+    <header>
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Nattanun</a>
+        <div class="nav__menu" id="nav__menu">
+          <ul class="nav__menu__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__menu__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__menu__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skill" class="nav__menu__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__menu__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__theme">
+          <i class="bx bx-moon nav__theme__icon" id="icon__theme"></i>
+        </div>
+        <div class="nav__toggle" id="nav__toggle">
+          <i class="bx bx-menu-alt-right"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <img src="image/homeClipPath.webp" class="home--image" />
+
+        <div class="home--container container">
+          <div class="home__data">
+            <p class="home__data__subtitle">Hi I'm nut.</p>
+            <h1 class="home__data__title">
+              I build <br />
+              amazing <br />
+              <b>experiences</b>
+            </h1>
+          </div>
+
+          <div class="home__social">
+            <a
+              href="https://www.facebook.com/profile.php?id=100075734332292"
+              target="_blank"
+              class="home__social__link"
+            >
+              <i class="bx bxl-facebook-circle"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/?hl=en"
+              target="_blank"
+              class="home__social__link"
+            >
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a
+              href="https://github.com/Nutlytical"
+              target="_blank"
+              class="home__social__link"
+            >
+              <i class="bx bxl-github"></i>
+            </a>
+          </div>
+
+          <div class="home__info">
+            <div>
+              <p class="home__info__title">About me</p>
+              <p class="home__info__icon">
+                <i class="bx bxs-chevron-right"></i>
+                <i class="bx bxs-chevron-right"></i>
+                <i class="bx bxs-chevron-right"></i>
+              </p>
+            </div>
+
+            <div class="home__info--image">
+              <a href="#about">
+                <img src="image/homeSmall.webp" class="home__info__image" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about" id="about">
+        <div class="about--container container">
+          <div class="about--img">
+            <div
+              class="about__img"
+              data-tilt
+              data-tilt-glare
+              data-tilt-max-glare="0.8"
+            >
+              <img src="image/about1.jpg" class="about__img--one" />
+            </div>
+
+            <div
+              class="about__img"
+              data-tilt
+              data-tilt-glare
+              data-tilt-max-glare="0.8"
+            >
+              <img src="image/about2.jpg" class="about__img--two" />
+            </div>
+          </div>
+
+          <div class="about__data">
+            <h2 class="about__title">About &nbsp; me</h2>
+            <p class="about__subtitle">
+              Hi! I'm Nut. 22 years old now. My hobby are coding, reading and
+              exercising. I'm easy going. I can get along with anybody, and when
+              I start to do anything I will go on until the job is done.
+            </p>
+            <a href="image/portfolio.pdf" target="_blank" class="about__button"
+              >Download CV <i class="bx bx-download"></i
+            ></a>
+          </div>
+        </div>
+
+        <!--==================== VIDEO ====================-->
+        <article class="video">
+          <h1 class="video__title">Video about me</h1>
+
+          <div class="video__container container">
+            <p class="video__description">A little bit of my everyday life</p>
+
+            <div class="video__content">
+              <video id="video-file">
+                <source src="image/video.mp4" type="video/mp4" />
+              </video>
+
+              <button class="video__button" id="video-button">
+                <i class="bx bx-play video__button__icon" id="video-icon"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skill" id="skill">
+        <h2>Skills</h2>
+        <p>My technical level</p>
+
+        <div class="skill--container container">
+          <div>
+            <!--==================== FIRST SKILLS ====================-->
+            <div class="skill__content skill__open">
+              <div class="skill__header">
+                <i class="bx bx-devices skill__header__icon"></i>
+
+                <div>
+                  <h1>Developer</h1>
+                  <p>FrontEnd & BackEnd</p>
+                </div>
+
+                <i class="bx bx-chevron-down skill__header__chevron"></i>
+              </div>
+
+              <div class="skill__list">
+                <div>
+                  <div class="skill__title">
+                    <p class="skill__name">HTML - CSS - SCSS</p>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill__bar">
+                    <span
+                      class="skill__percentage skill__percentage--basic"
+                    ></span>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="skill__title">
+                    <p class="skill__name">JavaScript - TypeScript - Node.js</p>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill__bar">
+                    <span
+                      class="skill__percentage skill__percentage--frontend"
+                    ></span>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="skill__title">
+                    <p class="skill__name">PHP - Python - Dart</p>
+                    <span>50%</span>
+                  </div>
+                  <div class="skill__bar">
+                    <span
+                      class="skill__percentage skill__percentage--backend"
+                    ></span>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="skill__title">
+                    <p class="skill__name">SQL - noSQL - Docker</p>
+                    <span>60%</span>
+                  </div>
+                  <div class="skill__bar">
+                    <span
+                      class="skill__percentage skill__percentage--database"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill__card">
+              <div class="skill__model">
+                <div class="skill__model--content">
+                  <h4 class="skill__model__title">Developer</h4>
+                  <i class="fas fa-times skill__model__close"></i>
+
+                  <ul class="skill__model__data">
+                    <li class="skill__model__description">
+                      <p>
+                        <i class="bx bx-check-circle"></i> JavaScript -
+                        TypeScript - Node.js
+                      </p>
+                      <p>React.js || Next.js || Vue.js || Express.js</p>
+                    </li>
+                    <li class="skill__model__description">
+                      <p>
+                        <i class="bx bx-check-circle"></i>PHP - Python - Dart
+                      </p>
+                      <p>Laravel || Data-Science || Flutter</p>
+                    </li>
+                    <li class="skill__model__description">
+                      <p><i class="bx bx-check-circle"></i> SQL - noSQL</p>
+                      <p>mySQL || SQlite || MongoDB || GraphQL</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <img src="/image/programmer.svg" class="skill__card--a model" />
+              <span>Click image to see more details</span>
+            </div>
+          </div>
+
+          <div>
+            <!--==================== SECOND SKILLS ====================-->
+            <div class="skill__content skill__close">
+              <div class="skill__header">
+                <i class="bx bx-line-chart skill__header__icon"></i>
+
+                <div>
+                  <h1>Financial</h1>
+                  <p>Insurance & Investment</p>
+                </div>
+
+                <i class="bx bx-chevron-down skill__header__chevron"></i>
+              </div>
+
+              <div class="skill__list">
+                <div>
+                  <div class="skill__title">
+                    <p class="skill__name">Insurance</p>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill__bar">
+                    <span
+                      class="skill__percentage skill__percentage--insurance"
+                    ></span>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="skill__title">
+                    <p class="skill__name">Value Investing</p>
+                    <span>70%</span>
+                  </div>
+                  <div class="skill__bar">
+                    <span
+                      class="skill__percentage skill__percentage--value"
+                    ></span>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="skill__title">
+                    <p class="skill__name">Technical Analysis</p>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill__bar">
+                    <span
+                      class="skill__percentage skill__percentage--technical"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill__card">
+              <div class="skill__model">
+                <div class="skill__model--content">
+                  <h4 class="skill__model__title">Financial</h4>
+                  <i class="fas fa-times skill__model__close"></i>
+
+                  <ul class="skill__model__data">
+                    <li class="skill__model__description">
+                      <p><i class="bx bx-check-circle"></i> Insurance</p>
+                      <p>Life Insurance || Non-Life Insurance</p>
+                    </li>
+                    <li class="skill__model__description">
+                      <p><i class="bx bx-check-circle"></i> value Investing</p>
+                      <p>Macro Economics || Financial Statements</p>
+                    </li>
+                    <li class="skill__model__description">
+                      <p>
+                        <i class="bx bx-check-circle"></i> Technical Analysis
+                      </p>
+                      <p>Elliott Wave || Price Action || Fibonacci</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <img src="/image/invest.svg" class="skill__card--b model" />
+              <span>Click image to see more details</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact" id="contact">
+        <div class="contact--title">
+          <h2 class="contact__title">Contact</h2>
+          <div class="contact__description">
+            <span>Don't hesitate to contact me,</span>
+            <span>I will reply you as soon as I can.</span>
+          </div>
+        </div>
+
+        <div class="contact--container container">
+          <div class="contact__info">
+            <h3 class="contact__info__subtitle">NAME</h3>
+            <span class="contact__info__text">jojo</span>
+
+            <h3 class="contact__info__subtitle">EMAIL</h3>
+            <span class="contact__info__text">jojo@gmail.com</span>
+
+            <h3 class="contact__info__subtitle">DESCRIPTION</h3>
+            <span class="contact__info__text">can't take my eyes off you</span>
+          </div>
+
+          <form
+            class="contact__form"
+            action="https://formsubmit.co/nutlytical@gmail.com"
+            method="POST"
+          >
+            <input
+              type="text"
+              placeholder="Name"
+              class="contact__input"
+              name="name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="contact__input"
+              name="email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Write your message here"
+              cols="0"
+              rows="10"
+              class="contact__input"
+              required
+            ></textarea>
+            <input type="submit" value="Send" class="contact__button button" />
+          </form>
+        </div>
+
+        <!--==================== APP ====================-->
+        <article class="app">
+          <div class="app__container container">
+            <div class="app__data">
+              <h1 class="app__title">App is available</h1>
+              <p class="app__subtitle">Find my application and download it</p>
+              <div class="app__stores">
+                <a href="404Page/index.html" target="_blank"
+                  ><img src="image/appStore.png" class="app__store"
+                /></a>
+                <a href="404Page/index.html" target="_blank"
+                  ><img src="image/playStore.png" class="app__store"
+                /></a>
+              </div>
+            </div>
+
+            <img src="image/phone.png" class="app__img" />
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__data">
+          <h1 class="footer__data__title">Nattanun</h1>
+          <p class="footer__data__subtitle">
+            Live each day as if your life had just begun.
+          </p>
+          <div>
+            <a
+              href="https://www.facebook.com/profile.php?id=100075734332292"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/?hl=en"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://github.com/Nutlytical"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__copy">
+          <p>Copyright &#169; 2021 Nattanun - All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scroll-up" id="scroll-up">
+      <i class="bx bx-up-arrow-alt"></i>
+    </a>
+    <script src="js/main.js"></script>
+    <script src="js/vanillatilt.js"></script>
+  </body>
+</html>
